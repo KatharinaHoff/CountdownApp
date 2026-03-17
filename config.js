@@ -3,7 +3,7 @@
 // Change this date to update the countdown target.
 // Format: "YYYY-MM-DD"
 // ============================================================
-const targetDate = new Date("2026-06-30");
+const targetDate = new Date("2026-07-25");
 
 // ============================================================
 // SCENARIO CONFIGURATION
