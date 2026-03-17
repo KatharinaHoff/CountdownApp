@@ -242,7 +242,9 @@ Delete the `@reboot` line, save, and close.
 
 1. **Create a Railway account** at [railway.app](https://railway.app) and sign in with GitHub.
 
-2. **Create a new project:** click **New Project → Deploy from GitHub repo**, then select this repository.
+2. **Create a new project:** click **New Project**. You will see several options (database, template, Docker image, etc.) — choose **GitHub Repo**, then select this repository from the list.
+
+   > **If no repositories appear:** Railway needs permission to access your GitHub repos. Click **"Configure GitHub App"** in the empty list. A GitHub authentication popup will open — scroll down to **Repository access**, select **Only select repositories**, find and add `CountdownTilMiseryEnds`, then click **Save**. Return to Railway and the repository will now appear in the list.
 
 3. **Add your API token:** in the Railway project dashboard, go to your service → **Variables** tab → **New Variable**, and add:
 
@@ -252,7 +254,9 @@ Delete the `@reboot` line, save, and close.
 
    Railway injects this as an environment variable at runtime, exactly like your local `.env` file.
 
-4. **Done.** Railway detects Node.js automatically, runs `npm install` and `npm start`, and gives you a public URL like `https://your-app.up.railway.app`.
+4. **Generate a public domain:** Railway does not expose your app to the internet automatically. Go to your service → **Settings** tab → **Networking** section → click **Generate Domain**. This gives you a URL like `https://your-app.up.railway.app`. Without this step the service is marked as "Unexposed" and you cannot open it in a browser.
+
+5. **Done.** Open the generated URL in your browser — the app is live.
 
 ### Notes
 
