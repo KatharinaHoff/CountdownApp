@@ -263,7 +263,7 @@ Delete the `@reboot` line, save, and close.
 - Railway sets the `PORT` environment variable automatically. The server already reads `process.env.PORT`, so no changes are needed.
 - Any push to your GitHub `main` branch will automatically trigger a redeploy.
 - Logs are visible in the Railway dashboard under the **Deployments** tab.
-- The free tier includes 500 hours/month of runtime, which is enough for continuous use on a single hobby project.
+- The free trial gives you $5 credit or 30 days, whichever runs out first. After that, Railway requires a paid Hobby plan ($5/month, which includes $5 of usage credit — so a small app like this often costs nothing beyond the base fee). If you don't add a payment method, the app will stop running.
 
 ---
 
